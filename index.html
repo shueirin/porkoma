@@ -6,10 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Por(k)oma - Pesan Sekarang Juga</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <style>
+       #mainimage {
+           max-width: 100vw;
+           max-height: 30vw;
+           object-fit: cover;
+           width: 100%;
+           margin:0 calc(-50vw + 50%);
+       }
+       @media screen and (max-width: 540px){
+            #mainimage {
+                max-height:60vw;
+                height: 60vw;
+            } 
+       }
+    </style>
 </head>
 <body>
-    <header class="mb-5">
+    <header class="mb-3">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="#">Por(k)oma</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +38,7 @@
                     <a class="nav-link" href="#paket">Paket</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#cara">Cara</a>
+                    <a class="nav-link" href="#cara">Cara Pesan</a>
                 </li>
                 </ul>
                 <span class="navbar-text">
@@ -34,10 +48,22 @@
         </nav>
     </header>
     <section id="tentang">
+
+
         <div class="container">
-            <figure>
-                <img class="img-fluid" src="./img/bacon1.jpg" alt="Bacon Images" />
-            </figure>
+
+            <div class="alert alert-warning" role="alert">
+                Sedang Buka PO Batch 2 sampai tanggal <b>12 Juni 2019, jam 12 siang</b>. Pengiriman akan dilakukan tanggal <b>16 Juni 2019</b>.
+            </div>
+        </div>
+
+        <figure class="mainimagecont">
+            <img id="mainimage" class="img-fluid" src="./img/bacon1.jpg" alt="Bacon Images" />
+        </figure>
+
+        <div class="container">
+
+            
             <h1>Bacon ipsum dolor amet filet mignon pancetta pork </h1>
             <p class="lead">Shank pastrami chuck ham, pork chop tenderloin picanha ribeye. Jerky strip steak porchetta, brisket filet mignon ham hock doner tenderloin jowl landjaeger ground round.</p>
             <p>Sausage beef ribs sirloin spare ribs jowl buffalo tail capicola pork belly pork loin. Tenderloin pig biltong, kielbasa ground round andouille turkey sausage pork belly. Alcatra pork bacon meatloaf.</p>
